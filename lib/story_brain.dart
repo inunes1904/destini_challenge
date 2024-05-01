@@ -75,6 +75,10 @@ List<Story> _storyData = [
     _storyNumber = 0;
     }
 
+    bool buttonShouldBeVisible(){
+      List<int> possibleChoices = [0,1,2];
+    return possibleChoices.contains(_storyNumber);
+    }
   }
 
 
